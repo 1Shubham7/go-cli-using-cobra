@@ -4,8 +4,10 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"github.com/1shubham7/cli/cmd/net"
 	"os"
+
+	"github.com/1shubham7/cli/cmd/info"
+	"github.com/1shubham7/cli/cmd/net"
 
 	"github.com/spf13/cobra"
 )
@@ -33,8 +35,9 @@ func Execute() {
 
 func addSubCommandPalletes() {
 	rootCmd.AddCommand(net.NetCmd)
+	rootCmd.AddCommand(info.InfoCmd)
 }
- 
+
 func init() {
 	addSubCommandPalletes()
 	// Here you will define your flags and configuration settings.
