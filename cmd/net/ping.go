@@ -2,7 +2,7 @@
 Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 
 */
-package cmd
+package net
 
 import (
 	"fmt"
@@ -26,7 +26,7 @@ to quickly create a Cobra application.`,
 }
 
 func init() {
-	rootCmd.AddCommand(pingCmd)
+	NetCmd.AddCommand(pingCmd)
 
 	// Here you will define your flags and configuration settings.
 
